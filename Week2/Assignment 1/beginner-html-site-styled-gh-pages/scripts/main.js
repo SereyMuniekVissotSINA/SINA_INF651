@@ -1,6 +1,6 @@
-// Store a reference to the <h1> in a variable
+// Store a reference to the <h1> in a variable.
 let myHeading = document.querySelector("h1");
-// Update the text content of the <h1>
+// Update the text content of the <h1>.
 myHeading.textContent = "Hello world!";
 
 const myImage = document.querySelector("img");

@@ -3,9 +3,10 @@ let personName = "Vissot";
 let personAge = 22;
 let personIsStudent = true;
 
-console.log(typeof personName);
-console.log(typeof personAge);
-console.log(typeof personIsStudent);
+console.log("Name:", personName, "| Type:", typeof personName);
+console.log("Age:", personAge, "| Type:", typeof personAge);
+console.log("Is Student:", personIsStudent, "| Type:", typeof personIsStudent);
+
 
 // Basic Arithmetic Operations
 let num1 = 10;

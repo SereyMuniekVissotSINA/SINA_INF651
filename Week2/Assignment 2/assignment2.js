@@ -1,5 +1,5 @@
 // Variables and Data Types
-let personName = "Vissot";
+let personName = "Elon Musks";
 let personAge = 22;
 let personIsStudent = true;
 
@@ -33,7 +33,7 @@ let sqrtNumber = Math.sqrt(negativeNumber);
 let squaredNumber = Math.pow(negativeNumber, 2);
 let absNumber = Math.abs(negativeNumber);
 
-console.log("Square Root:", sqrtNumber);
+console.log("Square Root:", sqrtNumber, "(NaN because cannot take sqrt of negative)");
 console.log("Squared:", squaredNumber);
 console.log("Absolute Value:", absNumber);
 
@@ -43,7 +43,7 @@ let b = 20;
 
 console.log("a > b:", a > b);
 console.log("a < b:", a < b);
-console.log("a == b:", a == b);
+console.log("a === b:", a === b);
 
 // Logical Operators
 

@@ -59,3 +59,4 @@ let firstName = "Jonh ";
 let lastName = "Doe";
 
 console.log(`Hello Mr.${firstName}${lastName}, Welcome to foundation of Javascript.`);
+ 

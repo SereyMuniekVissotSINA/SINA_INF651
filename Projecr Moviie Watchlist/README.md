@@ -53,10 +53,4 @@
   Refreshes the list of movies displayed on the page by dynamically creating HTML elements.
 
 
-## 🚀 Future Improvements
-
-* 🎨 Add CSS for better styling.
-* 💾 Save movies to **localStorage** so they persist after refreshing.
-* 🔍 Add a search or filter feature for movies.
-
 

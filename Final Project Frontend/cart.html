@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/code.png">
+    <title>Cart | CodeWithByte</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><i class="fa-solid fa-code"></i>Code with Byte</h1>
+            <form class="search-bar">
+                <input type="search" placeholder="Search your course">
+                <i class="fa-solid fa-search"></i>
+            </form>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="course.html"><i class="fa-solid fa-person-chalkboard"></i>Course</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-basket-shopping fa-bounce"></i>Cart</a></li>
+                <button class="sign-up-btn">Sign Up</button>
+                <button class="log-in-btn">Log In</button>
+            </ul>
+            
+        </nav>
+       
+    </header>
+
+    <main>
+        <div class="contain">
+            <div class="cart-container">
+                <h1>Shopping Cart</h1>
+            </div>
+
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart" id="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some course to get started!</p>
+                </div>
+            </div>
+
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="summary-row">
+                    <span>SubTotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span id="discount">-$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">
+                    <i class="fas fa-lock">
+                        Proceed to Checkout
+                    </i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+          <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>CodWithByte</span>
+                </div>
+                <div class="footer-tagline">
+                    Empowering students with coding skills and knowledge for a brighter future.
+                </div>
+            </div>
+            
+            <div class="code-display">
+                <div class="code-line">
+                    <span class="code-keyword">while</span>
+                    <span class="code-punctuation">(</span>
+                    <span class="code-keyword">true</span>
+                    <span class="code-punctuation">)</span>
+                    <span class="code-punctuation">{</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">learn</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Continuously acquire new skills</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">grow</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Develop as a professional</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">succeed</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Achieve your career goals</span>
+                </div>
+                <div class="code-line">
+                    <span class="code-punctuation">}</span>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 ByteBuilder. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/cart.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Learn Python Programming",
+      "instructor": "Mosh",
+      "price": 9.99,
+      "originalPrice": 60.99,
+      "category": "Fundamentals Programming",
+      "duration": "12 Hours",
+      "rating": 4.8,
+      "image": "https://www.python.org/static/community_logos/python-logo-master-v3-TM.png"
+    },
+    {
+      "id": 2,
+      "title": "Master JavaScript",
+      "instructor": "Jonas",
+      "price": 12.99,
+      "originalPrice": 75.99,
+      "category": "Web Development",
+      "duration": "30 Hours",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=200&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "React for Beginners",
+      "instructor": "Maximilian",
+      "price": 14.99,
+      "originalPrice": 89.99,
+      "category": "Frontend Development",
+      "duration": "25 Hours",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=200&fit=crop"
+    },
+    {
+      "id": 4,
+      "title": "Data Science with Python",
+      "instructor": "Jose Portilla",
+      "price": 19.99,
+      "originalPrice": 99.99,
+      "category": "Data Science",
+      "duration": "40 Hours",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop"
+    },
+    {
+      "id": 5,
+      "title": "Full Stack Web Development",
+      "instructor": "Colt Steele",
+      "price": 24.99,
+      "originalPrice": 129.99,
+      "category": "Web Development",
+      "duration": "50 Hours",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop"
+    }
+  ]
+}

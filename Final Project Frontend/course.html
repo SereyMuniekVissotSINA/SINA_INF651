@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/code.png">
+    <title>Courses</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><i class="fa-solid fa-code"></i>Code with Byte</h1>
+            <form class="search-bar" id="search-form">
+                <input type="search" placeholder="Search your course" id="course-search">
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button type="button" id="clear-search" class="clear-btn" style="display: none;">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </form>
+
+            <div class="filter-dropdown">
+                <button class="filter-toggle">
+                    <i class="fa-solid fa-filter"></i>
+                    Filter
+                </button>
+
+                <!-- MOVE THE FILTER MENU INSIDE THE DROPDOWN CONTAINER -->
+                <div class="filter-menu" style="display: none;">
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                            <option value="fundamentals program">Fundamentals Program</option>
+                            <option value="web">Web Development</option>
+                            <option value="javascript">JavaScript</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <select id="price-filter">
+                            <option value="">All Price</option>
+                            <option value="free">Free</option>
+                            <option value="under-10">Under $10</option>
+                            <option value="10-20">$10 - $20</option>
+                            <option value="over-20">Over $20</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Rating</label>
+                        <select id="rating-filter">
+                            <option value="">All Rating</option>
+                            <option value="4.5">4.5+ Stars</option>
+                            <option value="4.0">4.0+ Stars</option>
+                            <option value="3.5">3.5+ Star</option>
+                        </select>
+                        <button id="apply-filter" class="apply-btn">Apply Filters</button>
+                        <button id="reset-filter" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="course.html"><i class="fa-solid fa-person-chalkboard"></i>Course</a></li>
+                <li><a href="cart.html">
+                        <i class="fa-solid fa-basket-shopping fa-bounce"></i>
+                        Cart
+                        <span class="cart-count">0</span>
+                    </a></li>
+                <button class="sign-up-btn">Sign Up</button>
+                <button class="log-in-btn">Log In</button>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="backdrop" id="backdrop"></div>
+        <div class="container">
+            <h1>Available Courses</h1>
+
+            <div class="courses-grid">
+                <!-- Python Course Card -->
+                <section class="course-card" data-course-id="1">
+                    <div class="course-info" data-id="1">
+                        <div class="course-img">
+                            <!-- Replace with actual image path -->
+                            <img src="images/Python.svg.png" alt="Python Course">
+                        </div>
+                        <span class="course-category">Fundamentals Programming</span>
+                        <h2 class="course-title">Learn Python Programming</h2>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Mosh</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>12 Hours</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="discount">$9.99</h3>
+                                <h3 class="original">$60.99</h3>
+                            </div>
+                        </div>
+                        <p>Master the fundamentals of Python programming with hands-on projects and real-world examples.
+                        </p>
+                        <button class="enroll-btn" data-course-id="1">
+                            <i class="fas fa-shopping-cart"></i>
+                            Enroll Now
+                        </button>
+
+                        <div class="course-content">
+                            <div class="course-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">100+</div>
+                                    <div class="stat-label">Projects</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">56</div>
+                                    <div class="stat-label">Lectures</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">20</div>
+                                    <div class="stat-label">Hours</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">4.8</div>
+                                    <div class="stat-label">Rating</div>
+                                </div>
+                            </div>
+
+                            <div class="course-detail">
+                                <div class="detail-section">
+                                    <h3>What You'll Learn</h3>
+                                    <ul>
+                                        <li>You will master the Python programming language by building 100 unique
+                                            projects over 100 days.</li>
+                                        <li>You will be able to program in Python professionally</li>
+                                        <li>Create a portfolio of 100 Python projects to apply for developer jobs</li>
+                                        <li>Be able to use Python for data science and machine learning</li>
+                                        <li>Build GUIs and Desktop applications with Python</li>
+                                        <li>You will learn automation, game, app and web development, data science and
+                                            machine learning all using Python.</li>
+                                        <li>You will learn Selenium, Beautiful Soup, Request, Flask, Pandas, NumPy,
+                                            Scikit Learn, Plotly, and Matplotlib.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <h3>Course Modules</h3>
+                                <ul>
+                                    <li>Getting Started (33m)</li>
+                                    <li>Primitive Types (35m)</li>
+                                    <li>Control Flow (39m)</li>
+                                    <li>Functions (41m)</li>
+                                    <li>Data Structure (1h)</li>
+                                    <li>Exceptions (23m)</li>
+                                    <li>Classes (1h)</li>
+                                    <li>Modules (18m)</li>
+                                    <li>Python Standard Library (1h)</li>
+                                    <li>Python Packages (1h)</li>
+                                    <li>Popular Python Packages (1h)</li>
+                                    <li>Building Web Applications with Django (2h)</li>
+                                    <li>Machine Learning with Python (48m)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- JavaScript Course Card -->
+                <section class="course-card">
+                    <div class="course-info" data-id="2">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=200&fit=crop"
+                                alt="JavaScript Course">
+                        </div>
+                        <span class="course-category">Web Development</span>
+                        <h2 class="course-title">Master JavaScript</h2>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-user"></i>
+                                <span>Jonas</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30 Hours</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="discount">$12.99</h3>
+                                <h3 class="original">$75.99</h3>
+                            </div>
+                        </div>
+                        <p>Become a JavaScript expert with modern ES6+ features, frameworks, and real-world projects.
+                        </p>
+                        <button class="enroll-btn" data-course-id="2">
+                            <i class="fas fa-shopping-cart"></i>
+                            Enroll Now
+                        </button>
+
+                        <div class="course-content">
+                            <!-- Similar detailed content -->
+                        </div>
+                        <button class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>CodWithByte</span>
+                </div>
+                <div class="footer-tagline">
+                    Empowering students with coding skills and knowledge for a brighter future.
+                </div>
+            </div>
+
+            <div class="code-display">
+                <div class="code-line">
+                    <span class="code-keyword">while</span>
+                    <span class="code-punctuation">(</span>
+                    <span class="code-keyword">true</span>
+                    <span class="code-punctuation">)</span>
+                    <span class="code-punctuation">{</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">learn</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Continuously acquire new skills</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">grow</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Develop as a professional</span>
+                </div>
+                <div class="code-line" style="margin-left: 1.5rem;">
+                    <span class="code-function">succeed</span>
+                    <span class="code-punctuation">();</span>
+                    <span class="code-comment">// Achieve your career goals</span>
+                </div>
+                <div class="code-line">
+                    <span class="code-punctuation">}</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 ByteBuilder. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/cart.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+
+</html>

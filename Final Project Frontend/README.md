@@ -150,13 +150,8 @@ Final Project Web/
 
 2. **Serve the project** using a local server:
    ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # OR using Node.js (if installed)
-   npx http-server
-   
-   # OR open directly in your browser (limited compatibility)
+
+   # open directly in your browser (limited compatibility)
    file:///path/to/Final Project Web/index.html
    ```
 
